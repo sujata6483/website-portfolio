@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.max-width{
+    max-width :1600px;
+    padding: 0 80px;
+    margin:auto;
+}
+section{
+    padding: 100px;/* padding b/w navbar and my collection*/
+}
+/*navbar styling */
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index :999 /* specifies the stack order of an element.An element with greater stack order is always in front of an element with a lower stack order.*/
+    padding: 20px ;
+    background-color: crimson;
+    font-family: 'Crimson Text', serif;
+    }
+
+.navbar .max-width{
+    display: flex;/*Displays an element as a block-level flex container	*/
+    align-items:center;
+    justify-content: space-between;/* The justify-content property aligns the flexible container's items when the items do not use all available space on the main-axis (horizontally).  */
+}
+
+/* logo portfoli dimension */
+.navbar .logo a{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;/* thick and thinness of font*/
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;/* Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values*/
+    margin-left: auto;
+}
+.navbar .menu li a{
+    color: rgb(221, 216, 216);
+    font-size: 20px;
+    font-weight: 400px;
+    margin-left: 15px; /* space between home,about me....*/
+}
+.navbar .menu .ul {
+    margin-left: 20px;
+}
+/*menu-button styling*/
+.menu-button{
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/*contact styling */
+.contact{
+    font-family: 'Crimson Text', serif;
+    background-color:#b1e2e1;
+}
+.contact .title{
+    font-size:35px
+}
+
+.contact .title::after {
+    content: " cake botique ";
+    font-size: 20px;
+    font-size: 15px;
+    font-style: italic;
+    color: crimson;
+}
+
+.contact .title::before {
+    content: "";
+    background: rgb(241, 244, 245);
+}
+
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:centre;
+    justify-content: space-between;
+} 
+.contact .contact-content .column{
+    width:     calc(50% - 30px);
+    height:    calc(100vh - 20px);
+}
+.contact .contact-content .text{
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+
+}
+.contact .contact-content .left p{
+    text-align: justify;
+}
+.contact .contact-content .left .icons {
+    margin: 10px 0;
+}     
+.contact .contact-content .row{
+    display: flex;
+    height: 60px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color:crimson
+}
+.contact .contact-content .info .head{
+    font-size: 22px;
+    font-weight: 400; 
+}
+.contact .contact-content .info .sub-title{
+    color:rgb(52, 52, 54);
+}
+.contact .right form .zone{
+    display: flex;
+}
+.contact .right form .field,
+.contact .right form .zone .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contact .right form .textarea{
+    height: 80px;
+    width: 100%;
+}
+.contact .right form .name{
+    margin-left: 2px;
+}
+.contact .right form .email{
+    margin-left: 10px;
+}
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height: 100%;/* box styling*/
+    width: 100%;
+    border: 2px solid crimson;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 18px;
+    font-family: 'Verdana', sans-serif;
+
+}
+.contact .right form .textarea textarea{
+    padding-top: 10px;
+    resize: none;
+}
+.contact .right form .button{
+    height: 15px;
+    width: 150px;
+}
+.contact .right form .button button{
+    width: 100%;
+    height: 40;
+    border: 2px solid #fff;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}

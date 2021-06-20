@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.max-width{
+    max-width :1300px;
+    padding: 0 80px;
+    margin:auto;
+}
+/*navbar styling */
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index :999 /* specifies the stack order of an element.*/
+    /*An element with greater stack order is always in front of an element with a lower stack order.*/
+    padding: 30px 0;
+    background-color:rgb(220,20,60); 
+    font-family: 'Crimson Text', serif;
+    
+    }
+
+.navbar .max-width{
+    display: flex;/*Displays an element as a block-level flex container	*/
+    align-items: center;
+    justify-content: space-between;/* The justify-content property aligns the flexible container's items when the items do not use all available space on the main-axis (horizontally).  */
+}
+/* logo portfoli0 dimension */
+.navbar .logo a{
+    color: rgb(221, 216, 216);
+    font-size: 25px;
+    font-weight: 500;/* thick and thinness of font*/
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;/* Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values*/
+    margin-left: auto;
+}
+.navbar .menu li a{
+    color: rgb(221, 216, 216);
+    font-size: 20px;
+    font-weight: 400px;
+    margin-left: 15px; /* space between home,about me....*/
+    transition:  color 0.2s ease;
+
+}
+/*change color of home about...etc on cursor*/
+.navbar .menu li a:hover{
+    color:darkcyan;
+
+}
+.navbar .menu .ul {
+    margin-left: 20px;
+}
+/*menu-button styling*/
+.menu-button{
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/*Home section styling */
+.home{
+    display:flex;
+    background:black;
+    background-image: url("/Users/neetinsingh/Desktop/cake1.png");
+    background-repeat: no-repeat;
+    background-position: right; 
+    background-size: auto;
+    height:100% ;  /*dimension of my text*/
+    color: #fff;/*home-page  color of my text*/
+    min-height: 120vh; /*minimum height from the top of the text*/
+    font-family: 'Crimson Text', serif;
+    min-width: 190vh;
+}
+.home .max-width{
+    margin:auto 0 auto 40px;
+}
+
+.home .home-content .text1{
+    font-size: 25px;
+    /*font-weight: ;
+    margin-left: ;*/
+}
+.home .home-content .text2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left:-3px ;
+}
+.home .home-content .text3{
+    font-size: 30px;
+    margin: 5px 0;
+
+}
+.home .home-content .text3 span{
+    color:crimson	;
+    font-weight: 500px;
+}
+.about .about-content .column{
+    width: 50%;
+}
+.about .about-content .left{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
+}*/
+.about .about-content .right{
+    flex: 100%;
+}
+.collection .collection-content .card{
+    width: calc(50%- 10 px);
+    margin-bottom: 20px;
+}
+/*all similarstyling  styling*/
+/*about-me section styling*/
+section{
+    padding: 100px 0;
+}
+
+.collection .title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;/*about me padding*/
+    font-family: 'Helvetica', sans-serif;
+}
+
+/* Use the ::before selector to insert something before the content.*/
+.collection .title::before{
+    content: "";
+    position: absolute;/*position: absolute places an element relative to its parent's position and changing the layout around it.*/
+    bottom: 0px;
+    left : 50%;
+    width:220px;/* width of line over about me*/
+    height: 4px; /* thickness of line over about me*/
+    color: aquamarine;
+    background: rgb(8, 8, 8);
+    transform :translex(-50%); /* The translateX() CSS function repositions an element horizontally on the 2D plane. */
+}
+/*Use the ::after selector to insert something after the content.*/
+.collection .title::after{
+    content: "small town girl";
+    position: absolute;/* position: absolute places an element relative to its parent's position and changing the layout around it.*/
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: rgb(233, 93, 210);
+    padding:5px;/* padding around small town girl*/
+    background: #fff;
+    transform: translex(-50%); /* The translateX() CSS function repositions an element horizontally on the 2D plane. */
+}
+/*about section style*/
+
+.about, .collection { 
+    font-family: 'Crimson Text', serif;
+}
+.about .title::after{
+    content: "who I am";
+}
+.about .about-content, .collection .collection-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:centre;
+}
+.about .about-content .left {
+    width:45%
+}
+.about .about-content .left img{
+    height: 400px;
+    width:400px;
+    object-fit: cover;
+    border:6px;
+}
+/* width of right-column text*/
+.about .about-content .right {
+    width: 50%;
+}
+/* right-column text */
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10 px;
+}
+.about .about-content .right .p{
+    text-align: justify;/* side edges of para- text*/
+}
+.about .about-content .right a{
+    display:inline-block;
+    background: rgb(243, 55, 93);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30 px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid darkblue;
+    transition: all 0.3s ease;
+}
+
+/* collection styling*/
+.collection{
+    color: #fff;
+    background: #111;
+}
+.collection .title::before{
+    background: #111;
+}
+.collection .title::after{
+    background: #111;
+    content: "CAKE BOTIQUE";
+
+}
+.collection .collection-content .card{
+    width: calc(33% - 20 px);/*It's because you have to put a space between the + or - operator in order for it to work properly.*/
+    background: rgb(53, 113, 116);
+    text-align:center;
+    border-radius: 8px;
+    padding: 20px 20px;
+    cursor: pointer;/*property specifies the mouse cursor to be displayed when pointing over an element.*/
+}
+
+
+.collection .collection-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.collection .collection-content .card .box{
+    transition: all 0.4s ease;  /*CSS transitions allows you to change property values smoothly, over a given duration.*/
+    /*Specifies how many seconds or milliseconds the transition effect takes to complete*/
+}
+.collection .collection-content .card:hover .box{
+    transform: scale(1); /*The :hover selector is used to select elements when you mouse over them.*/
+    /* The transform property applies a 2D or 3D transformation to an element.---Defines a 2D scale transformation*/
+}
+.collection .collection-content .card i{
+    font-size: 50px; /* icon font-size*/
+    color: #FFC0CB;	
+ }
+
+
+/* responsive media query-Media queries is a feature of CSS 3 allowing content rendering to adapt to different conditions such as screen resolution (e.g. mobile and desktop screen size*/
+/*@media (max-width :990px){
+    .max-width{
+        padding: 0 50px;
+    }
+}
+.home .margin-left: 0px;{}
+    
+@media (max-width :1104px){
+    .about .about-content .left img{
+        height: 400px;
+        width: 400px;
+    }
+}
+*/
+@media (max-width :991px){
+    .max
+    padding:0 50px;
+}
+}*/
+
+
+/*home-page styling*/
+/* 
+body{    background-image: url("/Users/neetinsingh/Desktop/5_Piddington_MakeMeABaker_April2019-108.jpeg");
+    background-size: cover;
+
+}
+.collection .collection-content .card{
+    width: 100%;
+}
+*/

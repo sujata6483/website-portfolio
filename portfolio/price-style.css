@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.max-width{
+    max-width :1300px;
+    padding: 0 80px;
+    margin:auto;
+}
+/*navbar styling */
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 20px 0;
+    background-color:rgb(220,20,60); 
+    font-family: 'Crimson Text', serif;
+    }
+
+.navbar .max-width{
+    display: flex;/*Displays an element as a block-level flex container	*/
+    align-items: center;
+    justify-content: space-between;/* The justify-content property aligns the flexible container's items when the items do not use all available space on the main-axis (horizontally).  */
+}
+/* logo portfoli0 dimension */
+.navbar .logo a{
+    color: rgb(221, 216, 216);
+    font-size: 25px;
+    font-weight: 500;/* thick and thinness of font*/
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;/* Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values*/
+    margin-left: auto;
+}
+.navbar .menu li a{
+    color: rgb(221, 216, 216);
+    font-size: 20px;
+    font-weight: 400px;
+    margin-left: 15px; /* space between home,about me....*/
+    transition:  color 0.2s ease;
+
+}
+/*change color of home about...etc on cursor*/
+.navbar .menu li a:hover{
+    color:darkcyan;
+
+}
+.navbar .menu .ul {
+    margin-left: 20px;
+}
+/*menu-button styling*/
+.menu-button{
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+section{
+    padding: 150px 0;
+    background-color: #111;
+    color: #fff;
+}
+/*price styling */
+
+.price{
+    font-family: 'Crimson Text', serif;
+}
+.price .title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding-bottom: 20px;/*about me padding*/
+    box-shadow:crimson;
+    font-family: 'Crimson Text', serif;
+    color: rgb(13, 15, 15);
+}
+
+    
+/* text styling*/
+.price{
+    background-color: #b1e2e1;
+}
+
+.price .price-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.price .title::after{
+    content: "Cake Boutique";
+    font-size: small;
+    font-style: italic;
+    color: crimson;
+}
+.price .price-content .column{
+    width: calc(50% - 30px);
+    text-align: justify;
+    color: black;
+}
+.price .price-content .left .text{
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    color: #111;
+    background-color: rgb(240, 93, 122);
+}
+.price .price-content .left p{
+    font-size: 18px;
+    text-align: justify;/*paragraph text alignment*/
+    color: #111;
+    padding: 6px;
+}
+.price .price-content .right .text{
+    background-color: rgb(240, 93, 122);
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 10px;
+    text-align: justify;/*paragraph text alignment*/
+    color: #111;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    
+}
+
+.price .price-content .table {
+    table-layout: auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 10x solid #ddd;
+    
+  }
+  
+ .price .price-content th, td {
+     border: 3px solid #b1e2e1;
+    text-align: left;
+    padding: 12px;
+  }

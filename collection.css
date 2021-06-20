@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.max-width{
+    max-width :1300px;
+    padding: 0 80px;
+    margin:auto;
+}
+/*navbar styling */
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index :999 /* specifies the stack order of an element.*/
+    /*An element with greater stack order is always in front of an element with a lower stack order.*/
+    padding: 30px 0;
+    background-color:rgb(220,20,60); 
+    font-family: 'Crimson Text', serif;
+    }
+
+.navbar .max-width{
+    display: flex;/*Displays an element as a block-level flex container	*/
+    align-items: center;
+    justify-content: space-between;/* The justify-content property aligns the flexible container's items when the items do not use all available space on the main-axis (horizontally).  */
+}
+/* logo portfoli0 dimension */
+.navbar .logo a{
+    color: rgb(221, 216, 216);
+    font-size: 25px;
+    font-weight: 500;/* thick and thinness of font*/
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;/* Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values*/
+    margin-left: auto;
+}
+.navbar .menu li a{
+    color: rgb(221, 216, 216);
+    font-size: 20px;
+    font-weight: 400px;
+    margin-left: 15px; /* space between home,about me....*/
+    transition:  color 0.2s ease;
+
+}
+/*change color of home about...etc on cursor*/
+.navbar .menu li a:hover{
+    color:darkcyan;
+
+}
+.navbar .menu .ul {
+    margin-left: 20px;
+}
+/*menu-button styling*/
+.menu-button{
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.collection .title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding: 32px;
+    padding-bottom: 20px;/*about me padding*/
+    font-family: 'Crimson Text', serif;
+}
+.collection .title::before{
+    content: "";
+    position: absolute;/*position: absolute places an element relative to its parent's position and changing the layout around it.*/
+    bottom: 0px;
+    left : 35%;
+    width:200px;/* width of line over about me*/
+    height: 3px; /* thickness of line over about me*/
+    color: aquamarine;
+    background: rgb(8, 8, 8);
+    transform :translex(-50%); /* The translateX() CSS function repositions an element horizontally on the 2D plane. */
+}
+.collection .title::after{
+    content: "Taste of India";
+    position: absolute;/* position: absolute places an element relative to its parent's position and changing the layout around it.*/
+    bottom: -6px;
+    left: 50%;
+    font-size: 8px;
+    color: crimson;
+    padding:3px;/* padding around small town girl*/
+    background: #fff;
+    transform: translex(-50%); /* The translateX() CSS function repositions an element horizontally on the 2D plane. */
+}
+.collection{  
+    background-color: #ffe4e1;
+    color: #111;
+    padding: 60px;
+}
+
+/* in col form*/
+.collection .collection-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:centre;
+}
+.collection .collection-content.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding:0 10px;
+  }
+  .collection .collection-content .row::after{
+    content: " ";
+    clear: both;
+    display: table;
+  }
+  
+  /* Create two equal columns that sits next to each other */
+.collection .collection-content.column {
+    flex: left;
+    width: 50%;
+    padding: 8px;
+  }
+  
+.collection .collection-content.column img{
+    margin-top: 12px;
+    vertical-align: middle;
+  }
